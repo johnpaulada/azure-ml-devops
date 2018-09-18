@@ -1,0 +1,16 @@
+{
+  "name": "azure-ml-devops",
+  "version": "1.0.0",
+  "description": "Deck",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mdx-deck": "^1.7.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mdx-deck deck.mdx"
+  },
+  "author": "John Paul Ada",
+  "license": "MIT"
+}
