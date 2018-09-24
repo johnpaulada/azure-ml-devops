@@ -2,6 +2,7 @@ import { CodeSurfer } from "mdx-deck-code-surfer"
 export { swiss as theme } from 'mdx-deck/themes'
 
 # Azure DevOps
+A (probably) short introduction.
 
 ---
 
@@ -30,14 +31,15 @@ We'll get the data from the [Medical Costs Personal Kaggle Dataset](https://www.
 ---
 
 <CodeSurfer
-  title="Some Title"
-  notes="Start with this note"
-  code={require("!raw-loader!./snippet.js")}
+  title="Calling the model"
+  notes="This snippet makes a request to the model we created and uses the response."
+  code={require("!raw-loader!./request.js")}
   lang="javascript"
   showNumbers={false}
   dark={true}
   steps={[
-    { lines: [1], notes: "Notes" },
-    { range: [1, 2], notes: "More notes" },
+    { lines: [1], notes: "Makes the request to the model URL." },
+    { lines: [2], notes: "Converts response to JSON format." },
+    { lines: [3], notes: "Displays resulting JSON." },
   ]}
 />
