@@ -1,8 +1,43 @@
-# This is the title of my deck
+import { CodeSurfer } from "mdx-deck-code-surfer"
+export { swiss as theme } from 'mdx-deck/themes'
+
+# Azure DevOps
+
 ---
-# About Me
+
+## What is DevOps?
+
 ---
-```jsx
-<CodeSnippet />
-```
-# The end
+
+*DevOps Definition*
+
+---
+
+# Demo
+
+---
+
+We'll create a simple application for predicting the annual medical costs given some user information.
+
+---
+
+We'll use [Azure ML Studio](https://studio.azureml.net/) for creating the model.
+
+---
+
+We'll get the data from the [Medical Costs Personal Kaggle Dataset](https://www.kaggle.com/mirichoi0218/insurance).
+
+---
+
+<CodeSurfer
+  title="Some Title"
+  notes="Start with this note"
+  code={require("!raw-loader!./snippet.js")}
+  lang="javascript"
+  showNumbers={false}
+  dark={true}
+  steps={[
+    { lines: [1], notes: "Notes" },
+    { range: [1, 2], notes: "More notes" },
+  ]}
+/>
